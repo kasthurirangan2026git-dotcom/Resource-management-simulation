@@ -14,6 +14,8 @@ public class MenuUIHandler : MonoBehaviour
 {
     public ColorPicker ColorPicker;
 
+   
+
     
 
     public void NewColorSelected(Color color)
@@ -32,6 +34,8 @@ public class MenuUIHandler : MonoBehaviour
         Debug.Log(Application.persistentDataPath);
         Debug.Log(MainManager.Instance.TeamColor);
          ColorPicker.SelectColor(MainManager.Instance.TeamColor);
+
+          //MainManager.Instance = null;
          
     }
 
